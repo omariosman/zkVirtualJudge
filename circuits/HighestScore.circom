@@ -23,7 +23,6 @@ template GetHighestScore (participants_num) {
         //compare the output of the hashing both the value and the secret together with the hash of all the scores
         //This if condition is written to make sure that the winner score (value & secret hash) is one of the scores
       if (hashes[i].out == scores[i]) {
-        // score was valid
         if (scores_val_secret[i][0] > highest_score_value) {
           // bid value is higher than previously recorded bid
           highest_score_value = scores_val_secret[i][0];
